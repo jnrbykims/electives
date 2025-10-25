@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 1 - Color Switcher</title>
+  <style>
+    body { 
+      font-family: Arial; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      transition: background-color 0.3s ease;
+    }
+    .card {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+    }
+    .red { background-color: red; }
+    .green { background-color: green; }
+    .blue { background-color: blue; }
+    .yellow { background-color: gold; color: black; }
+    .reset { background-color: gray; }
+    button:hover { opacity: 0.8; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Pick a Background Color</h2>
+    <button class="red" onclick="changeColor('red')">Red</button>
+    <button class="green" onclick="changeColor('green')">Green</button>
+    <button class="blue" onclick="changeColor('blue')">Blue</button>
+    <button class="yellow" onclick="changeColor('yellow')">Yellow</button>
+    <button class="reset" onclick="changeColor('white')">Reset</button>
+  </div>
+
+  <script>
+    function changeColor(color) {
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+</body>
+</html>

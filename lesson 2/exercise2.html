@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <h1>Welcome to My Portfolio</h1>
+
+    <nav>
+        <a href="#project1">Project 1</a> |
+        <a href="#project2">Project 2</a> |
+        <a href="exercise4.html">Project 3</a>
+    </nav>
+
+    <h2>My Projects</h2>
+
+    <div id="project1" class="project">
+        <h3>Project 1</h3>
+        <p>Javascript fundamentals</p>
+    </div>
+
+    <div id="project2" class="project">
+        <h3>Project 2</h3>
+        <p>Profile page</p>
+    </div>
+
+    <div id="project3" class="project">
+        <h3>Project 3</h3>
+        <p>Another project description</p>
+    </div>
+
+    <footer>
+        <p>© 2025 My Portfolio</p>
+    </footer>
+</body>
+
+</html>
+
+<style>
+    body {
+        margin: 20px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        margin-bottom: 15px;
+    }
+
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+
+    .project {
+        display: none;
+        border: 1px solid orange;
+        background-color: #fff8e1;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .project:target {
+        display: block;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: auto;
+        font-size: 14px;
+        color: gray;
+    }
+</style>
